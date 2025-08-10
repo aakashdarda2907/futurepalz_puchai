@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "mcp-server.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "mcp-server.js" }
+  ]
+}
